@@ -238,6 +238,7 @@ static void check_dfu_mode(void)
   _sd_inited = (gpregret == DFU_MAGIC_OTA_APPJUM);
 
   // Start Bootloader in BLE OTA mode
+  // _ota_dfu = true;
   _ota_dfu = (gpregret == DFU_MAGIC_OTA_APPJUM) || (gpregret == DFU_MAGIC_OTA_RESET);
 
   // Serial only mode
